@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_mode">#80E1BEE7</color>
+
+    <color name="disabledColor">#353535</color>
+    <color name="drawable">@color/white</color>
+
+
+</resources>

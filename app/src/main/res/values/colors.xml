@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_500">#222222</color>
+    <color name="orange_700">#E64A19</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="green_700">#388E3C</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="past_deadline_color">@color/orange_700</color>
+    <color name="drawable">@color/gray_500</color>
+    <color name="text_overdue">@color/red_700</color>
+    <color name="text_due">@color/black</color>
+    <color name="text_invalid">@color/gray_500</color>
+    <color name="text_valid">@color/teal_700</color>
+    <color name="action_mode">#80BB86FC</color>
+
+    <color name="disabledColor">#353535</color>
+
+</resources>

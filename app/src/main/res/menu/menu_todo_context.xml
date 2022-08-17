@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/miShare"
+        android:icon="@drawable/ic_share_24"
+        android:visible="false"
+        tools:visible="true"
+        android:title="@string/label_share"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/miEdit"
+        android:icon="@drawable/ic_edit_24"
+        android:title="@string/label_edit"
+        android:visible="false"
+        tools:visible="true"
+        app:showAsAction="ifRoom"
+        />
+
+
+    <item
+        android:id="@+id/miDelete"
+        android:icon="@drawable/ic_delete_24"
+        android:title="@string/label_delete"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

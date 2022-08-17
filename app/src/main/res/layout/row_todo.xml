@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="todo"
+            type="com.ayia.workernotification.domain.Todo" />
+
+        <import type="com.ayia.workernotification.util.DateUtil"/>
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickCallback"
+            type="com.ayia.workernotification.presentation.TodoClickCallback" />
+
+        <variable
+            name="viewModel"
+            type="com.ayia.workernotification.presentation.TodoListViewModel" />
+
+        <import type="android.widget.CompoundButton" />
+
+        <import type="com.ayia.workernotification.util.Constants"/>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layoutForeground"
+            android:background="@color/action_mode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginHorizontal="4dp"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            android:focusable="true"
+            android:onClick="@{() -> clickCallback.onClick(todo, position)}"
+            android:onLongClick="@{() -> clickCallback.onLongClick(todo, position)}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:text="@{todo.title}"
+                tools:text="Switzerland"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvDate"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/checkbox"
+                />
+
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge_info"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvDate"
+                app:layout_constraintBottom_toBottomOf="@id/tvDate"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                app:todoInfo="@{todo}"
+                android:textSize="11sp"
+                tools:text="@string/dummy_checklist_count"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvInfo"
+                app:layout_constraintEnd_toStartOf="@id/checkbox"
+                android:layout_marginStart="4dp"
+                app:isNotInvisible="@{ todo.deadline != 0L}"
+                tools:text="Reminder"
+                android:text="@{todo.deadline != 0L? DateUtil.toDateTimeString(todo.deadline) : @string/label_updated+` `+DateUtil.toDateTimeString(todo.updated)}"
+                />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{(view) -> viewModel.onCheckBoxClicked(todo, ((CompoundButton)view).isChecked())}"
+                android:checked="@{todo.done}"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                style="@style/CircleCheckbox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/TodoListFragment">
+
+    <fragment
+        android:id="@+id/TodoListFragment"
+        android:name="com.ayia.workernotification.presentation.TodoListFragment"
+        android:label="@string/label_todos"
+        tools:layout="@layout/fragment_todo_list">
+
+        <action
+            android:id="@+id/action_TodoListFragment_to_TodoFormFragment"
+            app:destination="@id/TodoFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/TodoFormFragment"
+        android:name="com.ayia.workernotification.presentation.TodoFormFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_todo_form">
+        <argument
+            android:name="todoId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

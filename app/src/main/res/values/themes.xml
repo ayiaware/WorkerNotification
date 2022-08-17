@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WorkerNotification" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.WorkerNotification" parent="Base.Theme.WorkerNotification" />
+
+
+
+    <style name="CircleCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ic_done_selector</item>
+    </style>
+
+    <style name="ReminderCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ic_reminder_selector</item>
+    </style>
+
+    <style name="RecyclerViewStyle">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar</item>
+        <item name="android:scrollbars">vertical</item>
+
+
+    </style>
+
+    <style name="EmptyLayoutTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/disabledColor</item>
+    </style>
+</resources>
