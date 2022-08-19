@@ -9,6 +9,7 @@ Demo app demonstrating how to create and manage notifications locally using a co
 </p>
 
 ## Tech stack & Open-source libraries
+- Android Studio Artic Fox IDE
 - Minimum SDK level 21
 - Manual [Dependency Injection](https://developer.android.com/training/dependency-injection)
 - [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Livedata](https://developer.android.com/topic/libraries/architecture/livedata) for asynchronous.
