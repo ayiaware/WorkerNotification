@@ -1,7 +1,7 @@
 <h1 align="center">Worker Notification</h1>
 
 <p align="center">  
-🗡️Demo app demonstrating how to create and manage notifications locally using a combination of Jetpacks Worker Manager and Broadcast Receiver. It Also demonstrates modern Android development with Coroutines, LiveData, Jetpack (Room, ViewModel, Navigation), and Material Design based on MVVM architecture.
+Demo app demonstrating how to create and manage notifications locally using a combination of Jetpacks Worker Manager and Broadcast Receiver. It Also demonstrates modern Android development with Coroutines, LiveData, Jetpack (Room, ViewModel, Navigation), and Material Design based on MVVM architecture.
 </p>
 
 <p align="center">
@@ -17,12 +17,12 @@
   - ViewModel - Manages UI-related data holder and lifecycle aware. Allows data to survive configuration changes such as screen rotations.
   - DataBinding - Binds UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
   - Room Persistence - Constructs Database by providing an abstraction layer over SQLite to allow fluent database access.
+  - Navigation Component - Navigation component helps you implement navigation, ensuring a consistent and predictable user experience by adhering to an established set of [principles](https://developer.android.com/guide/navigation/navigation-principles)
 - Architecture
   - MVVM Architecture (View - DataBinding - ViewModel - Model)
   - Repository Pattern
 - [Timber](https://github.com/JakeWharton/timber) - A logger with a small, extensible API.
-- [Material-Components](https://github.com/material-components/material-components-android) - Material design components for building ripple animation, and CardView.
 
 
-## Find this repository useful? :heart:
+## Find this repository useful? leave a⭐
  
