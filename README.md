@@ -1,5 +1,6 @@
 <h1 align="center">Worker Notification</h1>
 
+
 <div id="badges" align="center">
   <a href="https://twitter.com/ayiaware">
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
@@ -46,6 +47,6 @@ Demo app demonstrating how to create and manage notifications locally using a co
   - Repository Pattern
 - [Timber](https://github.com/JakeWharton/timber) - A logger with a small, extensible API.
 
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/ayiaware/WorkerNotification/blob/master/License)
 
-## Find this repository useful? leave a⭐
- 
+## Find this repository useful? leave a⭐ for this repository [follow me](https://github.com/ayiaware)__ on GitHub 🤩
