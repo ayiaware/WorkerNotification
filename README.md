@@ -1,5 +1,11 @@
 <h1 align="center">Worker Notification</h1>
 
+<div id="badges" align="center">
+  <a href="https://twitter.com/ayiaware">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+</div>
+
 <p align="center">  
 Demo app demonstrating how to create and manage notifications locally using a combination of Jetpacks Worker Manager and Broadcast Receiver. It Also demonstrates modern Android development with Coroutines, LiveData, Jetpack (Room, ViewModel, Navigation), and Material Design based on MVVM architecture.
 </p>
