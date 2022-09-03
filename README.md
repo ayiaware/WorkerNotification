@@ -8,6 +8,17 @@ Demo app demonstrating how to create and manage notifications locally using a co
 <img src="/previews/screenshot.png"/>
 </p>
 
+### Functionalities
+- Add To-do
+- Delete To-do
+- Edit To-do
+- On/Off reminder notification
+- Search To-do list
+
+### Other topics covered in this project
+- How to implement Mutiselect using action mode
+- Custom check box (circler check box)
+
 ## Tech stack & Open-source libraries
 - Android Studio Artic Fox IDE
 - Minimum SDK level 21
