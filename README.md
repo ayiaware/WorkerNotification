@@ -18,6 +18,9 @@ Demo app demonstrating how to create and manage notifications locally using a co
 ### Other topics covered in this project
 - How to implement Mutiselect using action mode
 - Custom check box (circler check box)
+- Data binding
+- Two-way binding
+- Form validation
 
 ## Tech stack & Open-source libraries
 - Android Studio Artic Fox IDE
