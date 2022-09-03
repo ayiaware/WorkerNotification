@@ -8,6 +8,8 @@ Demo app demonstrating how to create and manage notifications locally using a co
 <img src="/previews/screenshot.png"/>
 </p>
 
+<img src="/previews/gif.gif" align="right" width="320"/>
+
 ### Functionalities
 - Add To-do
 - Delete To-do
@@ -16,14 +18,14 @@ Demo app demonstrating how to create and manage notifications locally using a co
 - Search To-do list
 
 ### Other topics covered in this project
-- How to implement Mutiselect using action mode
-- Custom check box (circler check box)
+- How to implement multi-select using action mode
+- Custom check box (circular check box)
 - Data binding
 - Two-way binding
 - Form validation
 
 ## Tech stack & Open-source libraries
-- Android Studio Artic Fox IDE
+- Android Studio Arctic Fox IDE
 - Minimum SDK level 21
 - Manual [Dependency Injection](https://developer.android.com/training/dependency-injection)
 - [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Livedata](https://developer.android.com/topic/libraries/architecture/livedata) for asynchronous.
