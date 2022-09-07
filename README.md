@@ -49,4 +49,4 @@ Demo app demonstrating how to create and manage notifications locally using a co
 
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/ayiaware/WorkerNotification/blob/master/License)
 
-## Find this repository useful? leave a⭐ for this repository [follow me](https://github.com/ayiaware)__ on GitHub 🤩
+## Find this repository useful? leave a⭐ for this repository [follow me](https://github.com/ayiaware) on GitHub 🤩
